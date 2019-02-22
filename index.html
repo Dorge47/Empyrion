@@ -15,9 +15,27 @@
         <label for="gravity">Force of gravity:</label>
         <input type="text" name="gravity" placeholder="1.00">
         <br>
-        <label for="lift">Maximum lift (optimally upward or forward)</label>
+        <label for="lift">Maximum lift (optimally upward or forward):</label>
         <input type="text" name="lift">
-
+        <select>
+            <option value="1">MN</option>
+            <option value="0.001">kN</option>
+        </select>
+        <br>
+        <label for="shipweight">Weight of ship:</label>
+        <input type="text" name="shipweight">
+        <select>
+            <option value="1">tons</option>
+            <option value="0.001">kilograms</option>
+        </select>
+        <br>
+        <select>
+            <option value="iron">Iron</option>
+            <option value="copper">Copper</option>
+            <option value="silicon">Silicon</option>
+        </select>
+        <br>
+        <button onclick="calculate(this.form)">Calculate!</button>
     </form>
 </body>
 
